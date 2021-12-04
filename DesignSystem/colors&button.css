@@ -301,11 +301,13 @@ body {
 /*BUTTONS*/
 
 .buttons {
+    background-color: rgb(255, 222, 130);
+    border-radius: 25px;
     display: grid;
     width: 800px;
     height: 800px;
     padding: 10px 10px 10px 10px;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 3fr);
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "title_btn"
                          "navbar_btn"
@@ -319,7 +321,7 @@ body {
     grid-area: title_btn;
     text-align: center;
     justify-self: center;
-    color: white;
+    color:black;
 }
 
 .navbar_btn {
@@ -330,20 +332,29 @@ body {
     align-items: center;
 }
 
-.btn1 {
-    display: inline-flex;
+.btn1,
+.btn1:hover {
+    /*display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;*/
     cursor: pointer;
     height: 32px;
-    padding: 0px 16px 0px 16px;
+    width: 149px;
+    padding: 0px 16px;
     border: 0px;
     box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
     opacity: 1;
     border-radius: 16px;
     font-weight: 600;
+    letter-spacing: 0.03em;
     background-color: var(--primary-light-blue);
     color: white;
+}
+
+.btn1:active{
+    opacity: 0.65;
+    transform: translateY(2px);
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
 }
 
 .mainblue_btn {
@@ -353,6 +364,35 @@ body {
     justify-self: center;
 }
 
+.btn2{
+    /*display: inline-flex;
+    justify-content: center;
+    align-items: center;*/
+    border: 0px;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    height: 48px;
+    width: 170px;
+    padding: 0px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 00.03em;
+    line-height: 1;
+    background-color: var(--primary-light-blue);
+    color: var(--primary-light-white1);
+}
+
+.btn2:hover{
+    opacity: 0.65;
+}
+
+.btn2:active{
+    opacity: 0.65;
+    transform: translateY(2px);
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+}
+
 .white_btn {
     display: grid;
     grid-area: white_btn;
@@ -360,9 +400,72 @@ body {
     justify-self: center;
 }
 
+.btn3 {
+     /*display: inline-flex;
+    justify-content: center;
+    align-items: center;*/
+    border: 2px solid var(--primary-light-blue);
+    border-radius: 16px;
+    box-shadow: none;
+    opacity: 1;
+    cursor: pointer;
+    height: 48px;
+    width: 133px;
+    padding: 0px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 00.03em;
+    line-height: 1;
+    background-color: transparent;
+    color: var(--primary-light-blue);
+}
+
+.btn3:hover{
+    opacity: 0.65;
+}
+
+.btn3:active{
+    opacity: 0.65;
+    transform: translateY(2px);
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+}
+
 .cards_btn {
     display: grid;
     grid-area: cards_btn;
     text-align: center;
     justify-self: center;
+}
+
+.btn4 {
+   /* -webkit-box-align: center;
+    align-items: center;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-family: inherit;
+    outline: 0px;*/
+    border: 0;
+    border-radius: 16px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    height: 48px;
+    width: 240px;
+    padding: 0px 24px;
+    background-color: rgb(31, 199, 212);
+    color: white;
+}
+
+.btn4:hover {
+    opacity: 0.65;
+}
+
+.btn4:active {
+    transform: translateY(2px);
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
 }
