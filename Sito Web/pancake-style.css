@@ -1,3 +1,69 @@
 * {
     margin: 0;
 }
+
+
+
+li>h2{
+    color: rgb(154, 106, 255);
+    
+}
+
+li>h3:hover{
+    text-decoration: underline;   
+}
+
+ul {list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+li{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;  
+    cursor: pointer;
+    
+}
+
+li>h1,h2,h3{
+    padding: 8px;
+    color: white;  
+    font-size: 15px;
+}
+
+.main {
+    height: 30vh;
+    background-color: rgb(188, 181, 218);
+}
+.footer_black_main{
+    background-color: rgb(39, 38, 44);
+    width: 100vw;
+    height: 70vh;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.footer_black_second{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.informazioni,.guida,.sviluppatori,.pancakeswap{
+    width: 240px;
+    height: 350px;
+    margin: 20px;
+    padding: 30px;
+    
+    
+}
+
