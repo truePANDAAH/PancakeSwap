@@ -2,14 +2,16 @@
     margin: 0;
 }
 
-
-
-li>h2{
-    color: rgb(154, 106, 255);
-    
+a {
+    text-decoration: none;
+    color: unset;
 }
 
-li>h3:hover{
+li>h2{
+    color: rgb(154, 106, 255);  
+}
+
+li>h3>a:hover{
     text-decoration: underline;   
 }
 
@@ -67,3 +69,7 @@ li>h1,h2,h3{
     
 }
 
+.online_shop_{
+    color: rgb(255, 178, 55);
+    
+}
