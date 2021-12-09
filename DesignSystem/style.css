@@ -134,3 +134,72 @@ p {
     transform: rotate(2deg);
     box-shadow: 0px -5px inset rgba(28, 10, 131, 0.5);
 }
+/* Sezione Input by Marco Vassallo*/
+
+.class1,.class2,.class3,.class4,.class5 {
+    padding: 0;
+    margin: 0;
+   
+}
+
+.class1{
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.class2{
+    border-radius: 16px;
+    background-color: rgb(238, 234, 244);
+    box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+}
+
+.class3{
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(40, 13, 95);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    padding: 0.75rem 1rem 0px;
+}
+
+.class4{
+    width: 100%;
+    display: flex;
+    padding: 0px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.class5{
+    display: flex;
+    flex-flow: row nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    padding: 0.75rem 0.75rem 0.75rem 1rem;
+}
+
+
+
+ input{  color: rgb(40, 13, 95);
+    width: 0px;
+    position: relative;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    flex: 1 1 auto;
+    background-color: transparent;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0px;
+    text-align: right;
+    appearance: textfield;
+    }
