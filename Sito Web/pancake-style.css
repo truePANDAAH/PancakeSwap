@@ -1,3 +1,158 @@
 *{
     margin: 0;
 }
+
+h1{
+    font-family: Kanit, sans-serif;
+    font-size: 64px;
+}
+h2{
+    font-family: Kanit, sans-serif;
+    font-size: 40px;
+}
+h3{
+    font-family: Kanit, sans-serif;
+    font-size: 20px;
+}
+p {
+    font-size: 16px;
+    font-family: Kanit, sans-serif;
+}
+
+.trade span,
+.crypto span {
+    color: rgb(118, 69, 217);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(31, 199, 212);
+    margin: 0 5px;
+    font-size: 16px;
+    font-family: Kanit, sans-serif;
+}
+
+.trade {
+    background-color: rgb(250, 249, 250);
+}
+
+.crypto {
+    background-color: rgb(240, 236, 242);
+}
+
+.trade,
+.crypto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+.trdtxt,
+.crptimg {
+    margin: 0 0 0 180px;
+}
+
+.trdimg,
+.crpttxt {
+    margin: 0 180px 0 0;
+}
+
+.trdbtn,
+.crptbtn {
+    background-color: rgb(31, 199, 212);
+    color: white;
+    font-size: 16px;
+    border-radius: 16px;
+    padding: 0 24px;
+    border: 0;
+    height: 48px;
+}
+
+
+.trdtxt h2,
+.crpttxt h2 {
+    color: rgb(40, 13, 95);
+    line-height: 1;
+}
+
+.trdtxt p,
+.crpttxt p { 
+    color: rgb(122, 110, 170);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+
+/* .trdimg {
+        animation: MoveUpDown 4s linear infinite;
+        position: absolute;
+        right: -100px;
+}
+      
+@keyframes MoveUpDown {
+    0%, 100% {
+        bottom: 0;
+        left: 50px;
+    }
+    50% {
+        bottom: 50px;
+        left: 0;
+    }
+} */
+.changebox {
+    margin: 0 180px 0 180px;
+}
+
+.cngtxt1,
+.cngtxt2 {
+    display: flex;
+}
+
+.cngtxt1 span,
+.cngtxt2 span {
+    color: rgb(40, 13, 95);
+}
+
+.cngtxt1 h3,
+.cngtxt2 h3 {
+    color: rgb(122, 110, 170);
+    margin-right: 10px;
+}
+
+.box1,
+.box2 {
+    display: flex;
+    margin-top: 20px;
+}
+
+.box1>div,
+.box2>div {
+    border-left: 2px solid rgb(215, 202, 236);
+    margin: 0 40px 0 0;
+}
+
+.box1 .nobord,
+.box2 .nobord {
+    border: none;
+}
+
+
+.box1 .txt1,
+.box2 .txt1 {
+    color: rgb(122, 110, 170);
+    margin: 0 0 0 10px;
+    font-size: 12px;
+}
+
+.box1 .txt2,
+.box2 .txt2 {
+    color: rgb(40, 13, 95);
+    margin: 0 0 0 10px;
+}
+
+.box1 .txt3,
+.box2 .txt3 {
+    color: rgb(215, 202, 236);
+    margin: 0 0 0 10px;
+}
