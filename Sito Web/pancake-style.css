@@ -202,7 +202,7 @@ nav {
     font-family: Kanit, sans-serif;
 }
 
-.purple-box {
+/*.purple-box {
     display: flex;
     padding: 24px;
     flex-direction: column;
@@ -259,7 +259,7 @@ nav {
 .purple-box-img {
     display: flex;
     justify-content: flex-end;
-}
+}*/
 
 
 .p-lilla{
