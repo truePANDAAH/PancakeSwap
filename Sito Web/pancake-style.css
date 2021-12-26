@@ -77,6 +77,7 @@ p{
 /*Header*/
 .header {
     width: 100%;
+    flex-flow: row nowrap;
 }
 
 .topbar {
@@ -92,27 +93,38 @@ p{
     border-bottom: 1px solid var(--primary-light-pink);
 }
 
+.topbar-right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: left;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
 }
 
 .menu {
     display: flex;
     flex-direction: row;
+    align-content: center;
 }
 
 .menu-left-box {
     display: flex;
+    flex-direction: row;
+    align-content: center;
 }
 
 .menu-left-items {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: left;
+    align-content: center;
     color: var(--primary-light-purple);
     /*padding-right: 2%;*/
 }
