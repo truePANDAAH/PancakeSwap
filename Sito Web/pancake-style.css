@@ -1,11 +1,53 @@
-* {
-    margin: 0;
-    text-decoration: none;
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500;700;800;900&display=swap');
+
+:root {
+    --primary-pink: rgb(237, 75, 158);
+    --primary-light-pink: rgb(215, 202, 236);
+    --primary-light-purple-max: rgb(184, 173, 210);
+    --primary-light-purple: rgb(122, 110, 170);
+    --primary-medium-purple: rgb(118, 69, 217);
+    --primary-purple: rgb(81, 33, 177);
+    --primary-dark-purple: rgb(40, 13, 95);
+    --primary-blue: rgb(29, 93, 144);
+    --primary-medium-blue: rgb(33, 107, 165);
+    --primary-light-blue: rgb(31, 199, 212);
+    --primary-yellow: rgb(255, 178, 55);
+    --primary-light-white1: rgb(244, 238, 255);
+    --primary-light-white2: rgb(250, 249, 250);
+    --primary-light-white3: rgb(240, 240, 240);
+    --primary-light-white4: rgb(233, 234, 235);
+    --primary-light-white5: rgb(231, 227, 235);
+    --primary-light-grey1: rgb(204, 204, 204);
+    --primary-light-grey2: rgb(189, 194, 196);
+    --primary-medium-grey: rgb(179, 179, 179);
+    --primary-grey: rgb(174, 174, 174);
+    /*SHADOWS*/
+    --shadow1: rgba(25, 19, 38, 0.102);
+    --shadow2: rgba(25, 19, 38, 0.051);
+    --shadow3: rgba(39, 38, 44, 0.4);
+    --shadow4: rgba(14, 14, 44, 0.4);
 }
 
-a{
-    color: white;
+/* general setting */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
+
+html {
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    /*font-size: 18px;
+    font-weight: 400;*/
+}
+
+/*a{
+    color: white;
+}*/
 
 h1{
     font-family: sans-serif;
@@ -29,6 +71,245 @@ p{
     font-family: sans-serif;
     font-size: 16px;
 }
+
+/*Header*/
+.header {
+    height: 100vh;
+    width: 100vw;
+}
+
+.menu-bar {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    text-align: center;
+    border-bottom: 1px solid var(--primary-light-pink);
+    width: 100%;
+    height: 56px;
+    background-color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    color: var(--primary-light-purple);
+}
+
+.menu-bar ul li {
+    display: inline-block;
+    width: 120px;
+    margin: 0;
+    padding: 0;
+    /*padding: 0 16px 0px 16px;*/
+}
+
+.menu-bar a {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-light-purple);
+}
+
+.menu-bar a:hover{
+    background-color: var(--primary-light-white1);
+    border-radius: 16px;
+    transition: all 0.3s ease 0s;
+}
+
+.menu-bar ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+.menu-bar ul li:hover > ul {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: fixed;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid var(--primary-light-pink);
+}
+
+.menu-bar ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+li > a::after {
+    content: '';
+}
+
+li > a:only-child::after{
+    content: '';
+}
+
+.right-topbar {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    text-align: center;
+}
+
+.right-topbar-logo {
+    display: inline-flex;
+    align-items: center;
+}
+
+.right-logo{
+    cursor: pointer;
+    padding-right: 5px;
+}
+.right-topbar-btns {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.world {
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    background: none;
+}
+ 
+.wheel {
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    background: none;
+}
+
+.btn1,
+.btn1:hover {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 32px;
+    width: 149px;
+    padding: 0px 16px;
+    border: 0px;
+    box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+    opacity: 1;
+    border-radius: 16px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    background-color: var(--primary-light-blue);
+    color: white;
+}
+
+.btn1:hover {
+    opacity: 0.65;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+}
+
+.btn1:active{
+    opacity: 0.65;
+    transform: translateY(2px);
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+}
+
+.right-logo:active{
+    transition: all 0.2s ease-out;
+}
+
+.right-logo:hover {
+    transform-origin: center;
+}
+
+/*First section*/
+
+/*.head-section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    /*display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.first-section {
+    display: grid;
+    width: 75vw;
+    height: 80vh;
+    padding: 16px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-first-section {
+    display: grid;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    grid-template-areas: 'box1-first-section' 'box2-first-section';
+}
+
+.box1-first-section {
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    grid-area: 'box1-first-section';
+}
+
+.btn3 {
+    /*display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--primary-light-blue);
+    border-radius: 16px;
+    box-shadow: none;
+    opacity: 1;
+    cursor: pointer;
+    height: 48px;
+    width: 133px;
+    padding: 0px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 00.03em;
+    line-height: 1;
+    background-color: transparent;
+    color: var(--primary-light-blue);
+}
+
+.box2-first-section {
+    display: grid;
+    grid-area: 'box2-first-section';
+    justify-content: center;
+    width: 500px;
+}*/
+/*Second section*/
+/*Third section*/
+/*Fourth section*/
+
 .p-lilla{
     font-family: sans-serif;
     font-size: 16px;
