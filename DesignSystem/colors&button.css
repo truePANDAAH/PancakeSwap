@@ -334,9 +334,6 @@ body {
 
 .btn1,
 .btn1:hover {
-    /*display: inline-flex;
-    align-items: center;
-    justify-content: center;*/
     cursor: pointer;
     height: 32px;
     width: 149px;
