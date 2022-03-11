@@ -262,6 +262,11 @@ nav {
     fill: rgb(184, 173, 210); 
 }
 
+.icon-button {
+    border: none;
+    background-color: transparent;
+}
+
 .language {
     position: relative;
     height: 100%;
@@ -308,6 +313,10 @@ nav {
 
 .lang:hover {
     opacity: 0.65;
+}
+
+.language-selector button {
+    border: none;
 }
 
 .cSawQi {
