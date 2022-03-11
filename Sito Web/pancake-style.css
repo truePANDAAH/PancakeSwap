@@ -133,6 +133,11 @@ nav {
     }
 }
 
+.desktop-logo {
+    width: 160px;
+}
+  
+
 .nav-left {
     display: flex;
     position: relative;
@@ -244,13 +249,17 @@ nav {
     color: var(--primary-medium-purple);
 }
 
-.pancake-logo img {
+.pancake-logo svg {
     margin-right: 0.5rem;
     transition: transform 0.3s ease 0s;
 }
 
-.pancake-logo:hover img {
+.pancake-logo:hover svg {
     transform: scale(1.2);
+}
+
+.iaPfuZ {
+    fill: rgb(184, 173, 210); 
 }
 
 .language {
@@ -299,6 +308,10 @@ nav {
 
 .lang:hover {
     opacity: 0.65;
+}
+
+.cSawQi {
+    fill: rgb(122, 110, 170);
 }
 
 .wheel-setting {
@@ -531,6 +544,18 @@ nav {
     border-radius: 1.5rem;
     padding: 1.5rem;
     background-color: white;
+}
+
+.dubkGi{
+    fill: rgb(122, 110, 170);
+}
+
+.ACFFk{
+    fill: rgb(31, 199, 212);
+}
+
+.kyGFY {
+    fill: rgb(237, 75, 158);
 }
 
 .cards-icon {
