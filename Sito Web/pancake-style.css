@@ -248,6 +248,15 @@ nav {
     margin: 0.25rem 0px;
 }
 
+.yellow-warning {
+    border-radius: 16px;
+    padding: 0px 8px;
+    border: 2px solid rgb(255, 178, 55);
+    box-shadow: none;
+    color: rgb(255, 178, 55);
+    margin-left: 8px
+}
+
 .header-right-topbar {
     display: flex;
     align-items: center;
@@ -344,6 +353,20 @@ nav {
 
 .language-selector button {
     border: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(122, 110, 170);
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: rgb(238 234 244) 0px 0px 5px inset;
+    border-radius: 10px;
 }
 
 .cSawQi {
