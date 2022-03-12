@@ -334,6 +334,8 @@ nav {
     letter-spacing: 0.03em;
     line-height: 1;
     cursor: pointer;
+    border: none;
+    background-color: transparent;
 }
 
 .lang:hover {
